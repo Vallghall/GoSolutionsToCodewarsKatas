@@ -1,1 +1,2 @@
-
+  Here I will post my solutions to CodeWars katas in Go.  
+There're not the best possible solutions, of course, but oh well...
