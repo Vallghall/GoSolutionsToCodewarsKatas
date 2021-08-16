@@ -1,4 +1,4 @@
-package Make_the_Deadfish_swim__6kyu_
+package make_the_deadfish_swim
 
 func Parse(data string) []int {
 	res := []int{}

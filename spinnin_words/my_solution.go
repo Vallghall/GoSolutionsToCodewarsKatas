@@ -1,7 +1,6 @@
-package main
+package spinnin_words
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -25,8 +24,4 @@ func wordReverse(word string, length int) string {
 		wordReversed[length-1-i] = letter
 	}
 	return string(wordReversed)
-}
-
-func main() {
-	fmt.Println(SpinWords("Checking work check"))
 }

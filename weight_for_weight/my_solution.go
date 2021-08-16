@@ -1,14 +1,13 @@
-package main
+package weight_for_weight
 
 import (
-	"fmt"
 	"sort"
 	"strings"
 )
 
 type elem []string
 
-func (e elem) Len() int { return len(e)}
+func (e elem) Len() int      { return len(e) }
 func (e elem) Swap(i, j int) { e[i], e[j] = e[j], e[i] }
 func (e elem) Less(i, j int) bool {
 	a, b := e.digitSum(i), e.digitSum(j)
@@ -32,8 +31,3 @@ func OrderWeight(str string) string {
 	sort.Sort(elem(elems))
 	return strings.Join(elems, " ")
 }
-
-func main() {
-	fmt.Println(OrderWeight("103 123 4444 99 2000"))
-}
-

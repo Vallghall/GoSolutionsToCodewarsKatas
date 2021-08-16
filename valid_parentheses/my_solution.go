@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package valid_parentheses
 
 func ValidParentheses(parens string) bool {
 	if len(parens)%2 != 0 {
@@ -27,8 +23,4 @@ func ValidParentheses(parens string) bool {
 		return false
 	}
 	return true
-}
-
-func main() {
-	fmt.Println(ValidParentheses("()()()())"))
 }
